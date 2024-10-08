@@ -10,20 +10,20 @@ source:
   sha256: c22a61e55c52d4d301999c0abf00f73b1ce4c21c1d139e5e9e960d8006717955
 
 build:
-  noarch: python
+  noarch: python >=3.10
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.10
     - setuptools >=42.0.0
     - wheel
     - ansys_tools_protoc_helper >=0.4.0
     - pip
   run:
-    - python >=3.7
-    - grpcio >=1.44,<2.dev0
+    - python >=3.10
+    - grpcio >=1.49,<2.dev0
     - protobuf <6,>=3.19
 
 test:
