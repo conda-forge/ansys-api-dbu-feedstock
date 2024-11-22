@@ -1,5 +1,5 @@
 {% set name = "ansys-api-dbu" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ansys_api_dbu-{{ version }}.tar.gz
-  sha256: a41933cdd6a254c7310b1c41a59dec7e190c54b2e99581bdab8a39b2286d53af
+  sha256: db28b75d2129000d89b5baaa1a5090fab77c229c0f79b0435aba2f39a4afa74a
 
 build:
   noarch: python
